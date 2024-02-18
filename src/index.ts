@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 
 import inquirer from 'inquirer'
-import viteHandler from './modules/vite-boilerplate'
+import viteHandler from './modules/vite'
 
 const LIST = ['vite-boilerplate']
 
-;(async function () {
+;(async function (): Promise<void> {
   const response = await inquirer.prompt([
     {
       name: 'option',
