@@ -1,6 +1,6 @@
 {
   "name": "@jasonpraful/scripts",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "private": false,
   "main": "dist/index.js",
   "license": "MIT",
@@ -21,7 +21,7 @@
   "scripts": {
     "start": "ts-node src/index.ts",
     "build": "tsc",
-    "version": "changeset && changeset version"
+    "ch:version": "changeset && changeset version"
   },
   "dependencies": {
     "inquirer": "^8.2.6"
