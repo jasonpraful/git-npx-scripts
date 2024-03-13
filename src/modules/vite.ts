@@ -20,7 +20,7 @@ export const handler = (repoName: string = 'vite-boilerplate'): void => {
     console.time('Cloning and installing dependencies completed in')
     console.info('Cloning repository...')
     execSync(`git clone --depth 1 ${GIT_URL} ${repoName}`, { stdio: 'inherit' })
-    fs.rmdirSync(`${repoName}/.git`, { recursive: true })
+    fs.rmSync(`${repoName}/.git`, { recursive: true })
 
     console.info('Installing dependencies...')
 
